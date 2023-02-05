@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h2 {
+    display: none;
+}
+
+#head {
+    width: max-content;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#head img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 80px;
+}
+
+p {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 7%;
+    transform: translateX(-55%);
+    font-size: 70px;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    color:white;
+    margin-left: 20px;
+    font-size: 50px;
+    font-family: 'Rubik Glitch', cursive;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: -55px;
+    left: 40%;
+    margin-right: 100px;
+}
+
+nav li {
+    margin: 0 100px 0 0;
+    color: white;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+a {
+    padding: 2px 0 5px 0;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#bloc_page {
+    margin-top: 100px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    height: auto;
+}
+
+.card-img {
+    width: 300px;
+    border-radius: 20px;
+    transform: scale(1);
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+    transition: 1s all;
+}
+
+.card:nth-child(2) {
+    background-color: white;
+}
+
+.card:nth-child(3) {
+    background-color: #04090d;
+}
+
+.card:nth-child(3) li, .card:nth-child(5) li, .card:nth-child(6) li, .card:nth-child(8) li {
+    color: white;
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(#eba991 75%, #e88eaa);  
+}
+
+.card:nth-child(5) {
+    background: linear-gradient(90deg, #a9c3cf 30%, #1b1b1d);
+}
+
+.card:nth-child(6) {
+    background: linear-gradient(90deg, #a8291a, #688088);
+}
+
+.card:nth-child(7) {
+    background: linear-gradient(#c5fcfa 70%, #fefd89)
+}
+
+.card:nth-child(8) {
+    background-color: black;
+}
+
+.card:nth-child(9) {
+    background: linear-gradient(90deg, #48d79d 40%, #e3fcf3);
+}
+
+.card article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.card ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card li {
+    font-size: 15px;
+    transform: translateX(7%);
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 2px;
+    font-family: 'Dosis', sans-serif;
+}
+
+audio {
+    position: relative;
+    height: 30px;
+    width: 290px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.card:hover {
+    height: 425px;
+    z-index: 1;
+}
+
+.card:nth-child(2n) {
+    position: relative;
+    top: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer article {
+    margin-top: 300px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+li > img {
+    position: absolute;
+    bottom: 1px;
+    left: 90px;
+    width: 20px;
+    height: 15px;
+}
+
+section i {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 5px white,
+    0 0 5px black,
+    0 0 5px 0.5px white;
+    animation: animate 150s infinite linear;
+    animation-delay: 0;
+    opacity: 80%;
+}
+
+section i:nth-child(3n) {
+    animation: animate 50s infinite linear;
+}
+
+section i:nth-child(4n) {
+    animation: animate 25s infinite linear;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-500px)
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 1200px) {
+    #title {
+        top: 100px;
+    }
+
+    nav li{
+        margin: 0 50px 0 0;
+    }
+}

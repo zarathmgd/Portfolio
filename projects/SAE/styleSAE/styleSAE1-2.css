@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+#head {
+    width: max-content;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#head img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 80px;
+}
+
+p {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    color:white;
+    margin-left: 20px;
+    font-size: 50px;
+    font-family: 'Rubik Glitch', cursive;
+    letter-spacing: 5px;
+}
+
+h2 {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: -55px;
+    left: 40%;
+    margin-right: 100px;
+}
+
+nav li {
+    margin: 0 100px 0 0;
+    color: white;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+a {
+    padding: 2px 0 5px 0;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#pnlArticle img, #ademoArticle img, #nosArticle img {
+    margin: 0 20px 0 20px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#pnlArticle img {
+    padding: 20px 0 0 0;
+    box-shadow: 0 0 20px 4px white,
+    0 0 10px 6px black;
+}
+
+#pnlArticle a {
+    border: none;
+}
+
+article {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#pnlArticle {
+    height: 300px;
+    border: 1px solid white;
+    margin: 200px 40px 200px 40px;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: url("../img/city_skies_by_erisiar_de5gxcy.jpg") center fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pnlArticle article {
+    color: white;
+    margin: 0 40px 0 40px;
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#ademoArticle, #nosArticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+    border: 1px solid white;
+    padding: 10px;
+    height: 300px;
+}
+
+#ademoArticle {
+    background: url("../img/neon_sunset_4k_by_axiomdesign_dbqddb9.png") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ademoArticle article, #nosArticle article {
+    margin: 0 40px 0 40px;
+    border: 3px solid white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#nosArticle {
+    background: url("../img/wide_view_by_kvacm_df47gvz.jpg") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nosArticle {
+    margin-top: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer article {
+    margin-top: 300px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+section i {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 5px white,
+    0 0 5px black,
+    0 0 5px 0.5px white;
+    animation: animate 500s infinite linear;
+    opacity: 80%;
+}
+
+section i:nth-child(3n) {
+    animation: animate 100s infinite linear;
+}
+
+section i:nth-child(4n) {
+    animation: animate 10s infinite linear;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-1000px)
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 1000px) {
+    #pnlArticle {
+        font-size: 5.5px;
+        padding: 0;
+    }
+
+    #ademoArticle {
+        font-size: 13px;
+    }
+
+    #title {
+        top: 140px;
+    }
+
+    nav li{
+        margin: 0 50px 0 0;
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+    #pnlArticle {
+        font-size: 9px;
+    }
+}
+

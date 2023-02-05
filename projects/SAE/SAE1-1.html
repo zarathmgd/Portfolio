@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSAE/styleSAE1-1.css">
+    <title>PNL</title>
+
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <section id="info"> <h2>Section info</h2>
+            <article class = "info-article" title = "Nom"><h2>PNL</h2>Pnl</article>
+            <article class = "info-article" title = "Membres"><h2>Ademo & Nos</h2>Ademo & Nos</article>
+            <article class = "info-article" title = "Style"><h2>Cloud Rap</h2>Cloud Rap</article>
+            <article class = "info-article" title = "Années actives"><h2>2014 - 2022</h2>2014 - 2022</article>
+            <article class = "info-article" title = "Label"><h2>Believe</h2>Believe</article>
+        </section>
+    </header>
+    <nav>
+        <section id = "pageLink"><h2>pageLink</h2>
+            <a href = "#"><article class = "navbar"><h2>Home</h2> HOME </article></a>
+            <a href = "SAE1-2.html"><article class = "navbar"><h2>Biography</h2> BIOGRAPHY </article></a>
+            <a href = "SAE1-3.html"><article class = "navbar"><h2>Discography</h2> DISCOGRAPHY </article></a>
+        </section>
+    </nav>
+    <section id="cloudSection"><h2>CloudSection</h2>
+        <article class="cloud" style = "--i:3"><h2>nuage1</h2></article>
+        <article class="cloud" style = "--i:10"><h2>nuage2</h2></article>
+        <article class="cloud" style = "--i:7"><h2>nuage3</h2></article>
+        <article class="cloud" style = "--i:2"><h2>nuage4</h2></article>
+        <article class="cloud" style = "--i:13"><h2>nuage5</h2></article>
+        <article class="cloud" style = "--i:11"><h2>nuage6</h2></article>
+        <article class="cloud" style = "--i:4"><h2>nuage7</h2></article>
+        <article class="cloud" style = "--i:9"><h2>nuage8</h2></article>
+        <article class="cloud" style = "--i:11"><h2>nuage9</h2></article>
+        <article class="cloud" style = "--i:8"><h2>nuage10</h2></article>
+        <article class="cloud" style = "--i:5"><h2>nuage11</h2></article>
+        <article class="cloud" style = "--i:10"><h2>nuage12</h2></article>
+        <article class="cloud" style = "--i:12"><h2>nuage13</h2></article>
+        <article class="cloud" style = "--i:14"><h2>nuage14</h2></article>
+        <article class="cloud" style = "--i:6"><h2>nuage15</h2></article>
+        <article class="cloud" style = "--i:12"><h2>nuage16</h2></article>
+        <article class="cloud" style = "--i:3.5"><h2>nuage17</h2></article>
+    </section>
+    <img src = "img/NOS_PNL.png" id = "NOS" alt = "Photo NOS"> 
+    <img src = "img/ADEMO_PNL.png" id = "ADEMO" alt = "Photo NOS">
+
+    <section id = "python"><h2>Time</h2>
+        <py-script>
+
+            from datetime import datetime
+
+            now = datetime.now()
+            print (str(now.hour) + " : " + str(now.minute) + " : " + str(now.second))
+
+        </py-script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSAE/styleSAE1-2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section id = "head">
+            <p id="title"></p>
+            <img src = "img/qlf_logo.png" alt = "Logo QLF">
+            <h1>PNL</h1>
+
+        </section>
+        <nav>
+            <ul>
+                <li><a href = "SAE1-1.html" lang = "en">Home</a></li>
+                <li><a href = "#" lang = "en">Biography</a></li>
+                <li><a href = "SAE1-3.html" lang = "en">Discography</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+        <section id = "pnlArticle"> <h2>pnlArticle</h2>
+            <a href = "#ademoArticle"><img src = "img/ademo_lemondechico.png" alt = "Photo Ademo LeMondeChico"></a>
+            <article> <h2>ArticlePNL</h2>
+
+                PNL (Peace N Lovés) est un groupe de rap français composé de Ademo et NOS, deux frères originaires de Corbeil-Essonnes dans le 91.<br>
+                Le groupe sort un premier EP nommé <em>Que la famille</em> en 2015, qui sera certifié disque de platine en 2020, cinq ans après sa sortie.<br>
+                Le 12 juin 2015 sortira <em>Le monde ou rien</em>, un morceau qui leur fera connaître le succès. Il comptabilise plus de 127 millions de vue en 2021.
+                Le premier album <em>Le Monde Chico</em> sort le 30 octobre 2015 et se classe première place des ventes sur iTunes dès la première semaine.
+                Il est aujourd'hui triple disques de platines.<br>
+                C'est le 16 septembre 2016 que le groupe sort son second album intitulé <em>Dans la légende</em>, qui connaîtra un énorme succès. Il est aujourd'hui vendu à plus d'un million d'exemplaires.<br>
+                Enfin, leur dernier album en date sort le 5 avril 2019, et s'intitule <em>Deux Frères</em>.<br>
+                Son succès sera encore plus important que le précédent : plus de 74 000 ventes en trois jours et certifié disque d'or avant la fin de sa première semaine.
+
+            </article>
+            <a href = "#nosArticle"><img src="img/nos_lemondechico.png" alt = "Photo NOS LeMondeChico"></a>
+        </section>
+       
+        <section id = "ademoArticle"> <h2>ademoArticle</h2>
+            <img src = "img/Ademo-removebg-preview.png" alt = "Photo Ademo">
+            <article> <h2>ArticleAdemo</h2>
+
+                Ademo, de son vrai nom Tarik Andrieu est un rappeur du groupe de rap <em>PNL</em>. <br>
+                Née le 26 décembre 1986, il grandit au quartier des <em>Tarterêts</em> à <em>Corbeil-Essonnes</em>.
+                En 1995 René Andrieu, le père des deux frères est arrêté pour détention de Canabis.<br>
+                Suite à cela, ils déménageront en Corrèze où Tarik suivra un BEP électronique, ainsi que son baccalauréat.
+                C'est lors de son adolescence qu'il s'initiera au rap, commençant sa carrière lorsqu'il travaillait à la SNCF.
+                Il sera cependant incarcéré à la prison de Fleury-Mérogis, avant d'en sortir en 2008.<br>
+                En 2020, il connaît une altércation musclée avec les forces de l'ordre, se concluant sur une condamnation à deux mois de prison ferme.<br>
+                Tarik sort sa première mixtape Le Son des Halls Vol. 1 en 2008. Le deuxième volume sort en 2011.
+            
+            </article>
+        </section>
+
+        <section id = "nosArticle"> <h2>nosArticle</h2>
+            <img src="img/NOS.png" alt = "Photo NOS">
+            <article> <h2>ArticleNOS</h2>
+
+                NOS, de son vrai nom Nabil Andrieu est un rappeur du groupe de rap <em>PNL</em>. <br>
+                Née le 25 avril 1989, il grandit comme son frère au quartier des <em>Tarterêts</em> à <em>Corbeil-Essonnes</em>.
+                Il déménagera avec son frère Tarik en Corrèze après l'arrestation de son père en 1995.<br>
+                Après l'obtention d'un baccalauréat STG, il étudiera quatres années de commerce à l'IUT de Ville d'Avray qu'il arrêtera par manque de moyens financiers.<br>
+                Nabil entame son projet 365 jours pour percer en novembre 2011, sous le pseudonyme <em>Ladif</em>.
+            
+            </article>
+        </section>
+    
+        <footer>
+
+            <article><h2>Designed by...</h2> Designed and created by MOUGAMADOU Zarath </article>
+
+        </footer>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script>
+            function stars() {
+                const a = 0;
+                const count = 300;
+                const section = document.querySelector("section");
+                var i = 0;
+                while (i < count) {
+                    const star = document.createElement("i");
+                    const x = Math.floor(Math.random() * window.innerWidth)
+                    const y = Math.floor(Math.random() * window.innerHeight * 2)
+    
+                    const size = Math.random() * 4;
+                    star.style.left = x + "px";
+                    star.style.top = y + "px";
+                    star.style.width = 1 + size + "px";
+                    star.style.height = 1 + size + "px";
+                    star.className = "star";
+    
+                    section.appendChild(star)
+                    i++
+                }
+            }
+            stars();
+            const pageTitle = document.querySelector("#title")
+            new Typewriter(pageTitle, {
+            
+            })
+            .changeDelay(200)
+            .typeString("Biography")
+            .pauseFor(1000)
+            .start()
+        </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2B37;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 10%;
+    min-width: 300px;
+    width: max-content;
+    height: max-content;
+    margin-left: 5%;
+}
+
+h1 {
+    position: relative; 
+    margin-top: 10%;
+    color: white;
+}
+
+#inputField {
+    height: 30px;
+    border: 1px solid white;
+    margin: 5% 0 5% 0;
+}
+
+#addToDo {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+.toDoItem {
+    width: 66.5%;
+    padding: 2% 0;
+    border: 1px solid white;
+    text-indent: 5%;
+    color: white;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+#command-explanation {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    color: white;
+    font-weight: bold;
+}
+
+#errorMessage {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    color: #b6ffee;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #2F2B37;
+}
+
+i {
+    position: absolute;
+    height: 200px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: linear-gradient(transparent, #fff);
+    z-index: -1;
+    animation: animate 5s linear infinite;
+}
+
+i:nth-child(n) {
+    background: linear-gradient(transparent, #79A79C);
+}
+
+i:nth-child(2n) {
+    background: linear-gradient(transparent, #72AFB2);
+}
+
+i:nth-child(3n) {
+    background: linear-gradient(transparent, #5D8C9A);
+}
+
+i:nth-child(4n) {
+    background: linear-gradient(transparent, #b6ffee);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(calc(70vh + 200px));
+    }
+}
+
+#memoTitle {
+    text-align: center;
+}
