@@ -148,7 +148,7 @@ for (i = 0; i < projectButton.length; i++) {
         sliderImages[0].setAttribute("src", "photos/ToDoList_Screenshot01.png");
         sliderImages[1].setAttribute("src", "photos/ToDoList_Screenshot02.png");
         sliderImages[2].setAttribute("src", "photos/ToDoList_Screenshot03.png");
-        projectLink.href = "projects/ToDoList.html";
+        projectLink.href = "projects/ToDoList/todolist.html";
     }) 
     projectButton[1].addEventListener("click", () => {
         sliderImages[0].setAttribute("src", "photos/Timer_Screenshot01.png");
