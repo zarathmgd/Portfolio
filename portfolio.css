@@ -174,7 +174,6 @@ nav ul li a {
 }
 
 .case {
-    text-overflow: clip;
     width: 28%;
     height: 31%;
     position: relative;
@@ -194,6 +193,11 @@ nav ul li a {
 .case.two {
     top: 14%;
     left: 61%;
+}
+
+.case.one p {
+    height: 100%;
+    word-wrap: break-word;
 }
 
 .two ul {
